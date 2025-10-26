@@ -1,4 +1,4 @@
-name: CI by ${{ github.actor }}
+name: CI Workflow
 
 on:
   pull_request:
