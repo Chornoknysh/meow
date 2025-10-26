@@ -10,6 +10,9 @@ jobs:
   github-task-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Show actor (user who triggered workflow)
+        run: echo "Workflow triggered by ${{ github.actor }}"
+
       - name: Show GITHUB_ACTIONS variable
         run: echo "GITHUB_ACTIONS = $GITHUB_ACTIONS"
 
